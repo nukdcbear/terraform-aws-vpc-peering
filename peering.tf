@@ -1,7 +1,6 @@
 resource "aws_vpc_peering_connection" "pc" {
   vpc_id        = module.aws_vpc_east.vpc_id
   peer_vpc_id   = module.aws_vpc_west.vpc_id
-  peer_owner_id = data.aws_caller_identity.west.account_id
   peer_region   = "us-west-2"
   auto_accept   = false
 
