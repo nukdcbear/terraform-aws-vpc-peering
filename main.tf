@@ -1,10 +1,10 @@
 terraform {
-  backend "s3" {
-    bucket  = "dcbear-engineering-dev-tfstate"
-    key     = "tfstates/demo-peered-vpc"
-    region  = "us-east-2"
-    encrypt = true
-  }
+  # backend "s3" {
+  #   bucket  = "dcb-tfe-bootcamp-tfstate"
+  #   key     = "tfstates/demo-peered-vpc"
+  #   region  = "us-east-2"
+  #   encrypt = true
+  # }
 }
 
 module "aws_vpc_east" {
